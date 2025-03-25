@@ -161,14 +161,15 @@ void UpdateGame(void)
 		SetFade(MODE_EDIT);
 	}
 
-#endif // _DEBUG
-
 	if (KeyboardTrigger(DIK_RETURN))
 	{// ENTERキー
 		// リザルトに遷移
 		SetFade(MODE_RESULT);
 
 	}
+
+
+#endif // _DEBUG
 
 	// ポーズ画面
 	if (KeyboardTrigger(DIK_P) == true || JoypadTrigger(JOYKEY_START))
