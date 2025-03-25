@@ -76,7 +76,6 @@ void InitGame(void)
 
 	InitParticle();			//パーティクル
 
-
 	InitTimer();			//タイマー
 
 	InitPlayerLifeBar();	//ライフバー
