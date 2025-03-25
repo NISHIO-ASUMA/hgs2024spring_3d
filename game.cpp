@@ -81,10 +81,6 @@ void InitGame(void)
 
 	InitPlayerLifeBar();	//ライフバー
 
-	g_gameState = GAMESTATE_NORMAL;	//　通常状態
-	g_nCounterGameState = 0;		//	カウンターの初期化
-	g_bPause = false;				//	ポーズ画面の初期化(ポーズ解除)
-
 	InitBlock();					//ブロックの初期化
 
 	InitBoss();						// ボスの初期化
@@ -93,6 +89,10 @@ void InitGame(void)
 
 	PlaySound(SOUND_LABEL_GAME);
 #endif
+
+	g_gameState = GAMESTATE_NORMAL;	//　通常状態
+	g_nCounterGameState = 0;		//	カウンターの初期化
+	g_bPause = false;				//	ポーズ画面の初期化(ポーズ解除)
 }
 //===================
 // ゲームの終了
